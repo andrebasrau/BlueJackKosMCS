@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+
+
+
+    >
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:background="@drawable/itembor"
+        android:elevation="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/kost_Image_tv"
+                android:layout_columnWeight="1"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_launcher_background"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="2"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/book_Name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kost Name"
+                android:textAlignment="viewStart"
+                android:textColor="#000"
+                android:textSize="20sp"
+                 />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Booked"
+                android:textAlignment="viewStart"
+                android:textColor="@color/blue"
+                android:textSize="10sp"
+                 />
+            <TextView
+                android:id="@+id/book_user_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="userid"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textSize="10sp"/>
+
+
+            <TextView
+                android:id="@+id/book_Price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kost Price"
+                android:textAlignment="viewStart"
+                android:textSize="15sp"
+                android:textColor="@color/red" />
+
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <TextView
+        android:id="@+id/booking_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="booking id"
+        android:textColor="#000"
+
+        />
+    <TextView
+        android:id="@+id/booking_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Booking Date"
+        />
+</LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

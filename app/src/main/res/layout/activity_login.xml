@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height = "wrap_content"
+        android:padding="20dp"
+        android:orientation ="vertical"
+        android:layout_gravity= "center"
+        >
+        <ImageView
+            android:layout_width = "200dp"
+            android:layout_height = "200dp"
+            android:src="@drawable/logo"
+            android:layout_gravity ="center"
+            android:contentDescription="TODO" />
+        <TextView
+            android:layout_width = "wrap_content"
+            android:layout_height ="wrap_content"
+            android:text="Login Here"
+            android:layout_gravity= "center"
+            android:textStyle="bold"
+            android:textColor = "#2CA7E0"
+            android:layout_marginTop ="20dp"
+            android:textSize = "25sp"
+            />
+
+        <EditText
+            android:id= "@+id/login_Username_edittext"
+            android:layout_width ="300dp"
+            android:layout_height= "wrap_content"
+            android:inputType="text"
+            android:hint="Username"
+            android:textColorHint="#2CA7E0"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_person"
+            android:drawablePadding ="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit"
+            android:padding= "20dp"/>
+
+        <EditText
+            android:id= "@+id/login_Password_edittext"
+            android:layout_width ="300dp"
+            android:layout_height= "wrap_content"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:textColorHint="#2CA7E0"
+            android:layout_gravity="center"
+            android:drawableStart="@drawable/ic_lock_black_24dp"
+            android:drawablePadding ="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit"
+            android:padding= "20dp"/>
+
+        <TextView
+            android:layout_width = "wrap_content"
+            android:layout_height ="wrap_content"
+            android:text="Forgot Password ?"
+            android:layout_gravity= "right"
+            android:textColor = "#2CA7E0"
+            android:layout_marginTop ="10dp"
+            android:textSize = "15sp"
+            android:layout_marginEnd = "35dp"
+            />
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/but"
+            android:text="Login"
+
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/register_btn"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/but"
+            android:onClick="regis"
+            android:text="Register"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+
+</ScrollView>
